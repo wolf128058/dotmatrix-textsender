@@ -3,17 +3,8 @@
 # pylint: disable=missing-docstring, line-too-long
 
 
-import json
 import argparse
-import urllib.request
-from datetime import datetime
 import requests
-import pytz
-from dateutil.tz import tzutc
-
-TZ_UTC = pytz.timezone("UTC")
-TZ_LOCAL = pytz.timezone("Europe/Berlin")
-UTC_NOW = datetime.now().astimezone(tzutc())
 
 parser = argparse.ArgumentParser(
     description='send test text to display')
