@@ -29,11 +29,11 @@ parser.add_argument('-i', '--intensity', default=10, help=r'intensity 0-15')
 parser.add_argument('-r', '--direction', default=0, help=r'direction')
 args = parser.parse_args()
 
-INTENSITY = int(args.INTENSITY)
+INTENSITY = int(args.intensity)
 if INTENSITY < 0 or INTENSITY > 15:
     INTENSITY = 10
 
-DIRECTION = int(args.DIRECTION)
+DIRECTION = int(args.direction)
 if DIRECTION < 0 or DIRECTION > 2:
     DIRECTION = 0
 
